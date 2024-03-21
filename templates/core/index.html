@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %} {% load static %} {% block head_title %}Banking System{% endblock %} {% block content %}
+<div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
+
+    <div class="w-full lg:w-1/2 lg:py-6 text-center">
+        <h1 style="font-size: 12rem" class="font-black text-blue-900 text-opacity-50">&#x20B1;&#x20B1;</h1>
+    </div>
+    <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6 bg-white rounded-2xl bg-opacity-70">
+        <h1 class="font-bold text-4xl my-4">Simple Banking System</h1>
+        <p class="leading-normal mb-4">
+
+"Welcome to our cutting-edge mobile banking app, where convenience meets security in the palm of your hand.
+            Experience the future of finance with our online banking features that empower you to manage your finances effortlessly. Enjoy seamless transactions, real-time account monitoring, and instant fund transfers at your fingertips. Our app ensures the highest level of security, employing state-of-the-art encryption technology to safeguard your financial data. Embrace the ease of modern banking with our user-friendly interface, providing a hassle-free way to access your accounts anytime, anywhere. Revolutionize your banking experience with our app – where convenience and security converge for your financial peace of mind."
+        </p>
+        <div class="flex justify-end w-full">
+            <a href="{% url 'accounts:user_registration' %}" class="bg-blue-900 text-white rounded-none hover:bg-white hover:text-blue-900 hover:border-blue-900 shadow hover:shadow-lg py-2 px-4 border border-gray-900 hover:border-transparent">Register</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
